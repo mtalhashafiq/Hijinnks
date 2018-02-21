@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="1dip">
+
+    <ImageView
+        android:id="@+id/image_vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/image_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <!--<VideoView
+            android:id="@+id/video_vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+             />-->
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+            android:id="@+id/video_vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_for_video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+             />
+    </RelativeLayout>
+</FrameLayout>

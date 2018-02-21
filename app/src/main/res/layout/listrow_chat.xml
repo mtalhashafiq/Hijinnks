@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sender_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sender_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/person1" />
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sender_profile"
+                    android:singleLine="true"
+                    android:text="Jonny Bhai"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/sender_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="5 DAYS Ago"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/sender_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:text="THis is my Message ."
+                    android:textColor="@color/dark_grey" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receiver_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/receiver_profilepic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:src="@drawable/person2" />
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/receiver_profilepic"
+                    android:singleLine="true"
+                    android:text="Naveed Bhai"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/receiver_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="3 DAYS Ago "
+                    android:textColor="@color/dark_grey"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/receiver_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="50dp"
+                    android:text="THis is Other Message ."
+                    android:textColor="@color/dark_grey" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mtalh.hijinnks.Activites.Tab.HomeFullViewpager">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/header_background"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="30dp"
+            android:weightSum="1.5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/drawer_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_left_icon"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <com.example.mtalh.hijinnks.CustomeUI.TextViews.Custome_Textview_Varela_Regular
+                    android:id="@+id/number_of_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="5 0f 6"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_weight="0.25"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/open_chat_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="13dp"
+                    android:src="@drawable/ic_upload" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/homeviewpaerfull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
